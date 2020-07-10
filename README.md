@@ -1,4 +1,6 @@
-# Meanstackapp
+# mean-stack-app
+
+An authorization app so that I can learn the MEAN stack.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
