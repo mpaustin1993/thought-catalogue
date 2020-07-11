@@ -1,0 +1,11 @@
+/* goes directly into the element */
+
+:host {
+  /* not everything treated as block by default */
+  display: block;
+  margin-top: 1rem;
+}
+
+.info-text{
+  text-align: center;
+}
