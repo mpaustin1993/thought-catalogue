@@ -1,0 +1,24 @@
+import { Injectable } from '@angular/core';
+import { Post } from './post.model';
+import { Subject } from 'rxjs';
+
+@Injectable({ providedIn: 'root' })
+export class PostsService {
+  private posts: Post[] = [];
+  private postsUpdated = new Subject<Post[]>();
+
+  //using the spread operator here b/c we want to copy the actual array, & edit that array
+  getPosts() {
+    return [...this.posts];
+  }
+
+  getPostsUpdateListener() {
+      return this.postsUpdated.asObservable();
+  }
+
+  addPost(title: string, content: string) {
+    const post: Post = { title: title, content: content };
+    this.posts.push(post);
+    this.postsUpdated.next([...this.posts]);
+  }
+}
