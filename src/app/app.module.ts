@@ -9,13 +9,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
-
-//   MatCardModule,
-//   MatButtonModule,
-//   MatToolbarModule,
-//   MatExpansionModule,
-//   MatProgressSpinnerModule
-// } from "@angular/material";
+import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
 import { PostCreateComponent } from "./posts/post-create/post-create.component";
@@ -41,6 +35,7 @@ import { AppRoutingModule } from "./app-routing.module";
     MatToolbarModule,
     MatExpansionModule,
     MatProgressSpinnerModule,
+    ReactiveFormsModule,
     HttpClientModule,
   ],
   providers: [],

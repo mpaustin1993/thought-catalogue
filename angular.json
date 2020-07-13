@@ -126,6 +126,6 @@
   },
   "defaultProject": "mean-course",
   "cli": {
-    "analytics": "177cfab2-e2bf-46a4-b6cb-611e9ac53948"
+    "analytics": false
   }
 }
