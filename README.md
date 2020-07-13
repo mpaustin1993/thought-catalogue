@@ -1,8 +1,6 @@
-# mean-stack-app
+# MeanCourse
 
-An authorization app so that I can learn the MEAN stack.
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
 
 ## Development server
 

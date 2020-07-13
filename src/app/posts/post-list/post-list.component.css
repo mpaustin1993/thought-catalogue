@@ -1,5 +1,3 @@
-/* goes directly into the element */
-
 :host {
   display: block;
   margin-top: 1rem;
@@ -12,4 +10,3 @@ mat-spinner {
 .info-text {
   text-align: center;
 }
-
