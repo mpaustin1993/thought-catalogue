@@ -9,6 +9,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import { MatPaginatorModule } from "@angular/material/paginator";
 import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
@@ -16,8 +17,8 @@ import { PostCreateComponent } from "./posts/post-create/post-create.component";
 import { HeaderComponent } from "./header/header.component";
 import { PostListComponent } from "./posts/post-list/post-list.component";
 import { AppRoutingModule } from "./app-routing.module";
-import { SignupComponent } from "./auth/signup/signup.component";
 import { LoginComponent } from "./auth/login/login.component";
+import { SignupComponent } from "./auth/signup/signup.component";
 import { AuthInterceptor } from "./auth/auth-interceptor";
 
 @NgModule({
@@ -26,12 +27,13 @@ import { AuthInterceptor } from "./auth/auth-interceptor";
     PostCreateComponent,
     HeaderComponent,
     PostListComponent,
-    SignupComponent,
     LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
@@ -40,12 +42,9 @@ import { AuthInterceptor } from "./auth/auth-interceptor";
     MatToolbarModule,
     MatExpansionModule,
     MatProgressSpinnerModule,
-    ReactiveFormsModule,
+    MatPaginatorModule,
     HttpClientModule,
-    AuthInterceptor,
   ],
-
-  // set up with multiple interceptors
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
   ],
